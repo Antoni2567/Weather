@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row no-gutters">
+    <div class="col-md-3 padding-0" *ngFor="let daily1 of daily; let i=index">
+      <div class="card" style="width: 20rem;">
+        <div class="card-header" style="text-align: center;"><h1>{{daily1.dt | datepipe}}</h1></div>
+        <img src="http://openweathermap.org/img/wn/{{daily1.weather[0].icon}}@2x.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{daily1.weather[0].description}}</h5>
+          <p class="card-text">Feels like {{daily1.feels_like.day}}</p>
+          <p class="card-text">Max temp: {{daily1.temp.max}}</p>
+          <p class="card-text">min temp: {{daily1.temp.min}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
