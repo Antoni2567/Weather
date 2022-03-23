@@ -1,0 +1,14 @@
+
+                  <div *ngFor="let todays of today" data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+                    <h4 class="text-center">Hourly Forecast</h4>
+                    <p class="text-center" id="list-item-1">Time & Date: {{todays.dt | timeConverter}}</p>
+                    <img class="rounded mx-auto d-block" src="http://openweathermap.org/img/wn/{{todays.weather[0].icon}}@2x.png">
+                    <p class="text-center" id="list-item-2">Sky Forecast: {{todays.weather[0].main}}</p>
+                    <p class="text-center" id="list-item-3">Sky Description: {{todays.weather[0].description}}</p>
+                    <p class="text-center" id="list-item-4">Temperature in Fahrenheit: {{todays.temp}}</p>
+                    <p class="text-center" id="list-item-4">What it feels like in Fahrenheit: {{todays.feels_like}}</p>
+                  </div>
+                  
+                
+
+
