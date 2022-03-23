@@ -1,0 +1,11 @@
+<form action="" #zipform="ngForm" (ngSubmit)="onsubmit(zipform)">
+    <div class="form-group" style="text-align:center;">
+        <p>Enter zipcode: </p><input class="form-control" style="width:10%; margin:auto; display:inline;" ngModel type="text" name="zipcode" #zipcode="ngModel" required [class.is-invalid]="zipcode.invalid && zipcode.touched" pattern="(^\d{5}$)|(^\d{5}-\d{4}$)"> 
+        <button [disabled]="zipform.invalid" type="submit">Submit</button>
+        <div *ngIf="zipcode.errors && (zipcode.invalid || zipcode.touched)">
+            <small class="text-danger" *ngIf="zipcode.errors['pattern']">Not a valid 5 digit zipcode</small>
+        </div>
+    
+    </div>
+    
+</form>

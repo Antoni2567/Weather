@@ -9,8 +9,8 @@ export class DataService {
 
   constructor(private http:HttpClient) { }
 
-  getForecast(): Observable<any> {
-    return this.http.get<any>('https://api.openweathermap.org/data/2.5/onecall?lat=33.44&lon=-94.04&exclude=hourly,minutely,current,alerts&appid=74d62568b872fcbad2e47bc0c718890b')
+  getForecast(lat:any, long:any): Observable<any> {
+    return this.http.get<any>(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&units=imperial&exclude=hourly,minutely,current,alerts&appid=912a4ddecbe3395a54af628f0a6b7b6e`)
 
   }
 
