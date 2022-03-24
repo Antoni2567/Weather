@@ -3,17 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './components/navbar/navbar/navbar.component';
-import { TodayComponent } from './today/today.component';
-import { TimeConverterPipe } from './time-converter.pipe';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { TodayComponent } from './components/today/today.component';
+import { TimeConverterPipe } from './pipes/time-converter.pipe';
 import { AlertsComponent } from './alerts/alerts.component';
 import { FormsModule } from '@angular/forms'
 import { ForecastComponent } from './components/forecast/forecast.component';
 import { DatepipePipe } from './pipes/datepipe.pipe';
 import { HistoricalComponent } from './components/historical/historical.component';
 import { SubmitzipComponent } from './components/submitzip/submitzip.component';
-import { SigninComponent } from './signin/signin.component';
-import { CreateComponent } from './create/create.component';
+import { SigninComponent } from './components/signin/signin.component';
+import { CreateComponent } from './components/create/create.component';
 
 @NgModule({
   declarations: [
