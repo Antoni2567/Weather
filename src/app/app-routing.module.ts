@@ -4,12 +4,15 @@ import { TodayComponent } from './today/today.component';
 import { AlertsComponent } from './alerts/alerts.component';
 import { ForecastComponent } from './components/forecast/forecast.component';
 import { HistoricalComponent } from './components/historical/historical.component';
-
+import { SigninComponent} from './signin/signin.component';
+import { CreateComponent } from './create/create.component';
 const routes: Routes = [
   {path:'today', component: TodayComponent},
   {path:'alerts', component: AlertsComponent},
   {path: 'forecast', component: ForecastComponent},
-  {path: 'historical', component: HistoricalComponent}
+  {path: 'historical', component: HistoricalComponent},
+  {path: 'signin', component: SigninComponent},
+  {path: 'create', component: CreateComponent}
 ];
 
 @NgModule({

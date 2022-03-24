@@ -21,7 +21,7 @@ export class ForecastComponent implements OnInit {
     this.location.getlocation().pipe(
       switchMap(coords => {
         this.city = coords.name
-        return this.weatherdata.getForecast(coords.lat,coords.lon)
+        return this.weatherdata.getWeatherData(coords.lat,coords.lon)
       })).subscribe(data => {
         this.daily = data.daily
       })

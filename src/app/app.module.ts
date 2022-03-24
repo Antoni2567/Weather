@@ -12,6 +12,8 @@ import { ForecastComponent } from './components/forecast/forecast.component';
 import { DatepipePipe } from './pipes/datepipe.pipe';
 import { HistoricalComponent } from './components/historical/historical.component';
 import { SubmitzipComponent } from './components/submitzip/submitzip.component';
+import { SigninComponent } from './signin/signin.component';
+import { CreateComponent } from './create/create.component';
 
 @NgModule({
   declarations: [
@@ -24,13 +26,15 @@ import { SubmitzipComponent } from './components/submitzip/submitzip.component';
     DatepipePipe,
     HistoricalComponent,
     NavbarComponent,
-    SubmitzipComponent
+    SubmitzipComponent,
+    SigninComponent,
+    CreateComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [SubmitzipComponent],
   bootstrap: [AppComponent]
