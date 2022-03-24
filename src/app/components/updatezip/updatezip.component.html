@@ -54,22 +54,15 @@
 </head>
 <body>
     <div class="wrapper">
-<h1>Login</h1>
+<h1>Update Zipcode</h1>
 <hr>
-<form #login = "ngForm" (ngSubmit) = "onsubmit(login)">
+<form #updatezip = "ngForm" (ngSubmit) = "onsubmit(updatezip)">
 <div>
-    <label for="">Email</label>
-    <input type="text"class="email"id="" #username="ngModel" ngModel name="username">
-</div>
-<div>
-    <label for="">Password</label>
-    <input type="text"class="password"id="" #password="ngModel" ngModel name="password">
+    <label for="">Zipcode:</label>
+    <input type="text"class="email"id="" #zipcode="ngModel" ngModel name="zipcode">
 </div>
 
-    <input type="button" class="btn" type="Submit" value="Login">
-    <div *ngIf="showErrorMessage">
-        <small class="text-danger">Incorrect login Please try again</small>
-      </div>
+    <input type="button" class="btn" type="Submit" value="Update">
 
 </form>
 

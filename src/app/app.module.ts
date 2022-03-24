@@ -14,6 +14,7 @@ import { HistoricalComponent } from './components/historical/historical.componen
 import { SubmitzipComponent } from './components/submitzip/submitzip.component';
 import { SigninComponent } from './components/signin/signin.component';
 import { CreateComponent } from './components/create/create.component';
+import { UpdatezipComponent } from './components/updatezip/updatezip.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { CreateComponent } from './components/create/create.component';
     NavbarComponent,
     SubmitzipComponent,
     SigninComponent,
-    CreateComponent
+    CreateComponent,
+    UpdatezipComponent
   ],
   imports: [
     BrowserModule,

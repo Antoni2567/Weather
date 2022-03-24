@@ -11,9 +11,17 @@ export class NavbarComponent implements OnInit {
 
   constructor(private serviceinfo:GetcoordService, private router:Router) { }
 
+  status : any 
   ngOnInit(): void {
+    this.status = localStorage.getItem("username")
   }
 
+  logout() {
+    localStorage.clear()
+    setTimeout(() => {
+      window.location.href="/"
+    },3000)    
+  }
   
   onsubmit(zipform: any) {
     console.log(zipform.value.zipcode)

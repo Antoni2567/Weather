@@ -26,8 +26,14 @@
         <div *ngIf="zipcode.errors && (zipcode.invalid || zipcode.touched)">
           <small class="text-danger" *ngIf="zipcode.errors['pattern']">Not a valid 5 digit zipcode</small>
       </div>
-      <button type="button" routerLink="/signin" class="btn btn-link"  >Sign in</button>
+      <div *ngIf='(status == null); else elseBlock'>
+        <button type="button" routerLink="/signin" class="btn btn-link"  >Sign in</button>
         <button type="button" routerLink="/create" class="btn btn-link" >Create an Account</button> 
+      </div>
+      <ng-template #elseBlock>
+        <button type="button" (click)="logout()" class="btn btn-link"  >Logout</button>
+        <button type="button" routerLink="/updatezip" class="btn btn-link"  >Update zipcode</button>
+      </ng-template>
       </form>
       </nav>
   
