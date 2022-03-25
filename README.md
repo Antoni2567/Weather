@@ -17,13 +17,16 @@ We built a weather forecasting app using the API. The data service takes in the 
 ## Features
 
 List of features ready and TODOs for future development
-* 
-* Awesome feature 2
-* Awesome feature 3
+* Can input a zip code and see the data for any location
+* View past weather information as well as future anywhere
+* Can create an account and have access permanently
+* Can view emergency alerts and hourly forecast
+* The app takes into account time and shows the weather at night or day depending on when the website is accessed
 
 To-do list:
-* Wow improvement to be done 1
-* Wow improvement to be done 2
+* Some zipcodes do not exist- maybe find a way to filter those
+* Currently the app is for US only. Maybe make it global in the future
+* Add more weather related information and an option to include more APIs to improve accuracy
 
 ## Getting Started
    
