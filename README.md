@@ -36,12 +36,13 @@ To-do list:
 > Be sure to include BOTH Windows and Unix command  
 > Be sure to mention if the commands only work on a specific platform (eg. AWS, GCP)
 
-- All the `code` required to get started
-- Images of what it should look like
+* After cloning, be sure to add the required node modules and install boostrap 4.6
+* For the spring boot part of it, set up your application properties configuration file according to your local system/database
 
 ## Usage
 
-> Here, you instruct other people on how to use your project after they’ve installed it. This would also be a good place to include screenshots of your project in action.
+* To find weather forecasts and information for any location in the U.S.
+* To view any emergency alerts in your area
 
 ## Contributors
 
