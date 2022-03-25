@@ -2,18 +2,22 @@
 
 ## Project Description
 
-Here goes your awesome project description!
+We built a weather forecasting app using the API. The data service takes in the zipcode and uses the geocoding API to return the latitude/longitude coordinates, which are then piped as parameters into the one-call API. Anyone can enter their zipcode in the search bar and get the location name, historical 5 day data, 7 day forecast, alerts, and hourly trends. There is also the option to create an account with and permanently assign a zipcode to the user. Once logged in, the user can change their zipcode and it will update in the database. The navbar uses an ng-template to display a log out or login depending on the session. All the data is stored locally on the client’s browser. 
 
 ## Technologies Used
 
-* Tech 1 - version 1.0
-* Tech 2 - version 2.0
-* Tech 3 - version 3.0
+* Angular - version 10
+* Bootstrap - 4.6
+* SpringBoot
+* MySQL
+* HTML
+* JS
+* CSS
 
 ## Features
 
 List of features ready and TODOs for future development
-* Awesome feature 1
+* 
 * Awesome feature 2
 * Awesome feature 3
 
@@ -38,7 +42,7 @@ To-do list:
 
 ## Contributors
 
-> Here list the people who have contributed to this project. (ignore this section, if its a solo project)
+Antonio Lewis & Nikhil Pradeep
 
 ## License
 
